@@ -136,9 +136,11 @@ public class Main {
         int[] arrayEvenElements = new int[arrayFiftyElements.length / 2];
         int evenElementarray = 0;
         for (int i = 0; i < arrayFiftyElements.length / 2; i++) {
-            if (arrayFiftyElements[i%2] >= leftBorderValues && arrayFiftyElements[i%2] <=rightBorderValues ) {
+            if (arrayFiftyElements.length/2 >= 0 ) {
                 arrayEvenElements[i] = arrayFiftyElements[evenElementarray];
                 evenElementarray += 2;
+            } else {
+                System.out.println("Увеличте размер массива");
             }
         }
         System.out.println(Arrays.toString(arrayEvenElements));
@@ -169,5 +171,9 @@ public class Main {
 
         }
         System.out.println(Arrays.toString(c));
+
+
+
+
     }
 }
