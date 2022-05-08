@@ -139,8 +139,6 @@ public class Main {
             if (arrayFiftyElements.length/2 >= 0 ) {
                 arrayEvenElements[i] = arrayFiftyElements[evenElementarray];
                 evenElementarray += 2;
-            } else {
-                System.out.println("Увеличте размер массива");
             }
         }
         System.out.println(Arrays.toString(arrayEvenElements));
